@@ -2,6 +2,7 @@ package Arrays.MissingNumber;
 
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.util.*;
 
 /**
  * Missing Number | Leetcode #0268 | Easy
@@ -13,13 +14,26 @@ import static org.junit.Assert.*;
 
 /**
  * Solution Notes by _______
- *
+ * Solution was hard coded, but explore bitwise operations - specifically XOR
  */
 
 public class MissingNumber {
 
   public static int missingNumber(int[] nums) {
-    // TODO: Your solution
+    Arrays.sort(nums);
+
+    // edge cases
+    if (nums[0] != 0) {
+      return 0;
+    } else if (nums[nums.length-1] != nums.length) {
+      return nums.length;
+    }
+    // array of length 2+
+    for (int i = 1; i < nums.length; i++) {
+      if (nums[i] - nums[i-1] != 1) {
+        return nums[i] - 1;
+      }
+    }
     return 0;
   }
 
