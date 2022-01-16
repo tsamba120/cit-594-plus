@@ -1,6 +1,8 @@
 package Arrays.MaximumSubarray;
 
 import org.junit.*;
+
+import static java.lang.Math.max;
 import static org.junit.Assert.*;
 
 /**
@@ -19,8 +21,20 @@ import static org.junit.Assert.*;
 public class MaximumSubarray {
 
   public static int maxSubArray(int[] nums) {
-    // TODO: Your solution
-    return 0;
+    // initializes first value in list as current sum and maximum sum
+    int curSum = nums[0];
+    int maxSum = curSum;
+
+    // iterate through second and more values in list
+    for (int i = 1; i < nums.length; i++) {
+      // curSum is maximum of previous curSum + current value OR just the current value
+        // this "disposes the garbage" if the previous values were too negative
+      curSum = max(curSum + nums[i], nums[i]);
+      // compares maximum between curSum and existing maxSum
+      maxSum = max(curSum, maxSum);
+
+    }
+    return maxSum;
   }
 
   @Test
