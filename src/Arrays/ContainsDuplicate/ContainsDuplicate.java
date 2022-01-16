@@ -44,6 +44,7 @@ public class ContainsDuplicate {
         return false;
     }
 
+    @Test
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 3, 1};
         boolean expectedAnswer1 = true;
