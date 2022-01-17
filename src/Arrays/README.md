@@ -11,7 +11,7 @@
 | 3     | [Missing Number](/src/Arrays/MissingNumber)                  | Easy       | Y    |
 | 4     | [Best Time to Buy and Sell Stock](/src/Arrays/BestTimeStock) | Easy       | Y    |
 | 5     | [Maximum Subarray](/src/Arrays/MaximumSubarray)              | Easy       | Y    |
-| 6     | Move Zeroes                                                  | Easy       |      |
+| 6     | [Move Zeroes](/src/Arrays/MoveZeroes)                        | Easy       | Y    |
 | 7     | Find the Duplicate Number                                    | Medium     |      |
 | 8     | [Rotate Array](/src/Arrays/RotateArray)                      | Medium     |      |
 | 9     | Product of Array Except Self                                 | Medium     |      |
