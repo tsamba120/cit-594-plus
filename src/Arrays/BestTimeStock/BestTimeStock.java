@@ -66,15 +66,16 @@ public class BestTimeStock {
         return maxProfit;
     }
 
+    @Test
    public static void main(String[] args) {
         int[] prices1 = {7,1,5,3,6,4};
         int expected1 = 5;
-//        assertEquals(expected1, naiveMaxProfit(prices1));
+        assertEquals(expected1, naiveMaxProfit(prices1));
         assertEquals(expected1, maxProfit(prices1));
 
         int[] prices2 = {7,6,4,3,1};
         int expected2 = 0;
-//        assertEquals(expected2, naiveMaxProfit(prices2));
+        assertEquals(expected2, naiveMaxProfit(prices2));
         assertEquals(expected2, maxProfit(prices2));
 
         System.out.println("Passed all tests!");
