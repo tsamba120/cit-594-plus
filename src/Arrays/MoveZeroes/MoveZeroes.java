@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 /*
 Move Zeroes | Leetcode #0283 | Easy
+https://leetcode.com/problems/move-zeroes/
 
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
