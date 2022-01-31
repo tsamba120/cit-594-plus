@@ -12,15 +12,37 @@ import LinkedLists.ListNode;
  */
 
 /**
- * Solution Notes by _______
- *
+ * Solution Notes
+    - Optimal Solution:
+        While both nodes are not null, iterate through list and do comparison + add operation
+        When one list ends, add the rest of other to new List. You can just add the next node then end, bc other ndoes are linked
+          Else just end
  */
 
 public class MergeTwoSortedLists {
 
   public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-    // TODO: Your Solution
-    return l1;
+    ListNode dummy = new ListNode(0);
+    ListNode tail = dummy;
+
+    while (l1 != null && l2 != null) {
+      if (l1.val < l2.val) {
+        tail.next = l1;
+        l1 = l1.next;
+      } else {
+        tail.next = l2;
+        l2 = l2.next;
+      }
+      tail = tail.next;
+    }
+
+    if (l2 == null) {
+      tail.next = l1;
+    } else if (l1 == null) {
+      tail.next = l2;
+    }
+
+    return dummy.next;
   }
 
   @Test

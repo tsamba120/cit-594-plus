@@ -5,15 +5,16 @@
 ### Basic Linked List Questions
 
 | Order | Question                                                       | Difficulty | Votes |
-| ----- | -------------------------------------------------------------- | ---------- | ----- |
+|-------|----------------------------------------------------------------|------------| ----- |
 | 1     | Design a Linked List                                           | Easy       |       |
-| 2     | Delete all occurrences of value in Linked List                 | Easy       |       |
-| 3     | Swapping Nodes in a Linked List                                | Medium     |       |
-| 4     | Add Two Numbers                                                | Medium     |       |
-| 5     | [Reverse Linked List II](/src/LinkedLists/ReverseLinkedListII) | Medium     |       |
-| 6     | Odd-Even linked List                                           | Medium     |       |
-| 7     | Merge K Sorted Lists                                           | Hard       |       |
-| 8     | Reverse Nodes in K Group                                       | Hard       |       |
+| 2     | [Cycle in a Linked List](/src/LinkedLists/LinkedListCycle)     | Easy       |       |
+| 3     | Delete all occurrences of value in Linked List                 | Easy       |       |
+| 4     | Swapping Nodes in a Linked List                                | Medium     |       |
+| 5     | Add Two Numbers                                                | Medium     |       |
+| 6     | [Reverse Linked List II](/src/LinkedLists/ReverseLinkedListII) | Medium     |       |
+| 7     | Odd-Even linked List                                           | Medium     |       |
+| 8     | Merge K Sorted Lists                                           | Hard       |       |
+| 9     | Reverse Nodes in K Group                                       | Hard       |       |
 
 ### Linked List Variations
 
